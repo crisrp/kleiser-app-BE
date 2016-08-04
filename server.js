@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 var MongoClient = mongodb.MongoClient;
 // var mongoUrl = 'mongodb://localhost:27017/kleiser';
 // heroku mongodb
-var mongoUrl = 'mongodb://heroku_r2b0d4gm:vni40asof632mi7jgs4pn1sg34@ds029715.mlab.com:29715/heroku_r2b0d4gm/';
+var mongoUrl = 'mongodb://heroku_r2b0d4gm:vni40asof632mi7jgs4pn1sg34@ds029715.mlab.com:29715/heroku_r2b0d4gm';
 
 var CAMBRIDGE_API_KEY = process.env.CAMBRIDGE_API_KEY;
 
