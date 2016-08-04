@@ -23,9 +23,9 @@ var mongoUrl = process.env.KLEISER_MONGO_URL;
 
 
 /* default */
-// app.get('/', function (request, response) {
-//   response.send('kleiser app. Hello!');
-// });
+app.get('/', function (request, response) {
+  response.send('kleiser app. Hello!');
+});
 
 /*get random phrase*/
 app.get('/usefulphrases', function(request, response) {
