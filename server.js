@@ -7,19 +7,19 @@ var ObjectId = require('mongodb').ObjectID;
 
 var app = express();
 
-// var PORT = process.env.PORT || 3000;
+var PORT = process.env.PORT || 3000;
 // heroku
-var PORT = process.env.PORT || 80;
+// var PORT = process.env.PORT || 80;
 
 app.use(cors());
 app.use(bodyParser.urlencoded({extended: true}));
 
 
 var MongoClient = mongodb.MongoClient;
-// var mongoUrl = 'mongodb://localhost:27017/kleiser';
+var mongoUrl = 'mongodb://localhost:27017/kleiser';
 // heroku mongodb
 var CAMBRIDGE_API_KEY = process.env.CAMBRIDGE_API_KEY;
-var mongoUrl = process.env.KLEISER_MONGO_URL;
+// var mongoUrl = process.env.KLEISER_MONGO_URL;
 
 
 /* default */
@@ -102,7 +102,7 @@ app.post('/usefulphrases/wordgetid', function(req, res) {
 
   request({
     url: apiBaseUrl+endpoint,
-    headers: {'accesskey': CAMBRIDGE_API_KEY},
+    headers: {'accesskey': 'mcq9cxUgNQdTw9O6dE7WjIjeB87UCOjd2TRtHW9PTfzCgPgqrvZe8J7uqsQx6Nv8'},
     method: 'GET',
     callback: function(error, response, body) {
       res.send(body);
