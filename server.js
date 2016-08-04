@@ -24,9 +24,9 @@ var CAMBRIDGE_API_KEY = process.env.CAMBRIDGE_API_KEY;
 
 
 /* default */
-app.get('/', function (request, response) {
-  response.send('kleiser app. Hello!');
-});
+// app.get('/', function (request, response) {
+//   response.send('kleiser app. Hello!');
+// });
 
 /*get random phrase*/
 app.get('/usefulphrases', function(request, response) {
