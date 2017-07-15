@@ -102,7 +102,7 @@ app.post('/usefulphrases/wordgetid', function(req, res) {
 
   request({
     url: apiBaseUrl+endpoint,
-    headers: {'accesskey': 'mcq9cxUgNQdTw9O6dE7WjIjeB87UCOjd2TRtHW9PTfzCgPgqrvZe8J7uqsQx6Nv8'},
+    headers: {'accesskey': ''}, // missing key
     method: 'GET',
     callback: function(error, response, body) {
       res.send(body);
@@ -120,7 +120,7 @@ app.post('/usefulphrases/wordgetdef', function(req, res) {
 
   request ({
     url: apiBaseUrl+endpoint,
-    headers: {'accesskey': 'mcq9cxUgNQdTw9O6dE7WjIjeB87UCOjd2TRtHW9PTfzCgPgqrvZe8J7uqsQx6Nv8'},
+    headers: {'accesskey': ''}, // missing key
     method: 'GET',
     callback: function(error, response, body) {
       console.log(response);
